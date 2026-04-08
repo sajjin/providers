@@ -16,6 +16,7 @@ import { pirxcyScraper } from '@/providers/sources/pirxcy';
 import { tugaflixScraper } from '@/providers/sources/tugaflix';
 import { vidsrcvipScraper } from '@/providers/sources/vidsrcvip';
 import { zoechipScraper } from '@/providers/sources/zoechip';
+import { youPlexSources } from '@/providers/sources/youplex';
 
 import { AnimetsuEmbeds } from './embeds/animetsu';
 import {
@@ -102,6 +103,7 @@ import { zunimeScraper } from './sources/zunime';
 export function gatherAllSources(): Array<Sourcerer> {
   // all sources are gathered here
   return [
+    ...youPlexSources,
     fsOnlineScraper,
     dopeboxScraper,
     cuevana3Scraper,
