@@ -1,4 +1,8 @@
 import { Embed, Sourcerer } from '@/providers/base';
+import { AnimekaiScraper } from './embeds/animekai';
+import { animekaiScraper } from './sources/animekai';
+import { FedAPIScraper } from './sources/fedapi';
+import { FedAPIDBScraper } from './sources/fedapidb';
 import { doodScraper } from '@/providers/embeds/dood';
 import { filemoonScraper } from '@/providers/embeds/filemoon';
 import { mixdropScraper } from '@/providers/embeds/mixdrop';
@@ -128,6 +132,9 @@ export function gatherAllSources(): Array<Sourcerer> {
     EightStreamScraper,
     wecimaScraper,
     animeflvScraper,
+    animekaiScraper,
+    FedAPIScraper,
+    FedAPIDBScraper,
     pirxcyScraper,
     vidsrcvipScraper,
     rgshowsScraper,
@@ -211,6 +218,7 @@ export function gatherAllEmbeds(): Array<Embed> {
     filelionsScraper,
     droploadScraper,
     supervideoScraper,
+    AnimekaiScraper,
     voeScraper,
   ];
 }
